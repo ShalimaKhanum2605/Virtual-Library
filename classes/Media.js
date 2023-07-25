@@ -1,4 +1,19 @@
 // create your Media class:
+class Media {
 
-// uncomment below to export it:
+    static totalMediaCount = 0;
+
+    constructor(title, year, genre) {
+        this.title = title;
+        this.year = year;
+        this.genre = genre;
+        Media.totalMediaCount++
+    }
+
+    summary() {
+        return `Title: ${this.title}, Year: ${this.year}, Genre: ${this.genre}`
+    }
+}
 module.exports = { Media }
+
+
